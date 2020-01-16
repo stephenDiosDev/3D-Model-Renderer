@@ -1,0 +1,38 @@
+Rotate: mouse left click and drag
+Rotate Left/Right: left and right arrow keys
+
+Zoom in/out: scroll wheel
+Zoom in/out: up and down arrow keys
+
+Move light direction: Right click and drag
+
+Orthographic Mode: O (letter)
+Perspective Mode: P
+
+Move model up/down/left/right: W S A D
+
+Wireframe:       1
+Flat Shading:    2
+Gouraud Shading: 3
+Phong Shading:   4
+
+I wasn't able to implement switching models via keys, which means it requires some commenting and uncommenting
+of code. When you want to switch between models and their textures, you must modify 3 parts of code
+in main.cpp by commenting/uncommenting as described below:
+
+TO CHANGE MODELS:
+Line 400 in main.cpp has all 4 models listed. Comment out every model you don't want, so the only
+enabled line is the model you want.
+
+TO CHANGE TEXTURES:
+Line 467 in main.cpp has the 3 texture files listed. Enable them similarly to models when you want
+to use them for their respective model.
+
+TO CHANGE SHADING BETWEEN SHADING WITH TEXTURES AND SHADING WITHOUT TEXTURES:
+Line 520 in main.cpp has 2 sections. The first block is when you want to use any shading with textures enabled,
+and the second block is when you want to use any shading with textures disabled. Make sure you only have 1 block
+enabled at a time!
+
+
+
+
